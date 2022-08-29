@@ -3,7 +3,7 @@
 delivery_stratified: -assbl=testdata/assbl.csv -basic=testdata/basic.csv
 cc_d_stratified: -arc=testdata/cc.csv
 
-//== simple datalog suite ==
+== simple datalog suite ==
 tc_ll: -arc=testdata/arc.csv
 tc_ll: -arc=testdata/arc.csv -packedBroadcast=true
 sg: -rel=testdata/sg1.csv
@@ -38,7 +38,7 @@ mr_attend: -organizer=testdata/attend/organizer2.csv -friend=testdata/attend/fri
 mr_attend: -organizer=testdata/attend/organizer2.csv -friend=testdata/attend/friend2.csv -threshold=3
 mr_attend: -organizer=testdata/attend/organizer2.csv -friend=testdata/attend/friend2.csv -threshold=4
 
- == skip suite ==
+// == skip suite ==
 //mr_complex1: -a=testdata/cp1.csv
 //mr_company_control: -ownedshares=testdata/company_control.csv
 //pagerank: -start=testdata/pagerank/start.csv -matrix=testdata/pagerank/matrix.csv

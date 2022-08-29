@@ -21,6 +21,8 @@ import edu.ucla.cs.wis.bigdatalog.spark.BigDatalogSessionState
 
 import org.apache.spark.sql.Row
 
+import java.nio.file.Paths
+
 class DatalogRunner extends Runner {
   private val dir = "query/datalog/"
   private val ext = ".txt"
@@ -35,6 +37,7 @@ class DatalogRunner extends Runner {
     val out = sessionState.out
     val outputFile = options.get("output")
     val collect = outputFile.isDefined
+    println(Paths.get(".").toAbsolutePath)
 
     val start = System.currentTimeMillis()
 

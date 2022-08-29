@@ -88,6 +88,7 @@ trait TestUtil extends Logging {
         val vals = arr(1)
         val values = vals.split("\\|")
         for (v <- values) {
+          println(s"{args.tail}")
           genCombs(args.tail, formed ++ Seq(s"$key=$v"))
         }
       }
